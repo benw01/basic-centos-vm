@@ -15,4 +15,4 @@ echo -e "<?php\n\tphpinfo();\n?>" > /var/www/html/phpinfo.php
 
 # And finally, log a message for the user.
 # In the VM I'm provisioning, the second interface is always the useful IP. Thus the cut -f2.
-echo -e "\n********\nHi! Pleae visit http://$(/usr/bin/hostname -I | /usr/bin/cut -f2 -d' ')/phpinfo.php in your browser.\n********\n",
+echo -e "\n********\nHi! Please visit http://$(/usr/bin/hostname -I | /usr/bin/cut -f2 -d' ')/phpinfo.php in your browser.\n********\n"

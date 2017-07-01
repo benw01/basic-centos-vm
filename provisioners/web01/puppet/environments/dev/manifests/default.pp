@@ -39,7 +39,7 @@ service { 'httpd':
 
 # finally, echo a message for the user.
 notify { 'welcome':
-	message => "\n\n********\nHi! Pleae visit http://${::ipaddress_enp0s8}/phpinfo.php in your browser.\n********\n",
+	message => "\n\n********\nHi! Please visit http://${::ipaddress_enp0s8}/phpinfo.php in your browser.\n********\n",
 	# Making this require the httpd service means it will run last.
 	require => Service['httpd']
 } 
